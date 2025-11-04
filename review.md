@@ -1,13 +1,4 @@
 
-## What this notebook does
-- Defines a **`Solution`** class encapsulating data (values, weights, constraints) and methods:
-  - `is_valid(solution)` – feasibility: unique assignment per item and per-dimension capacity per knapsack.
-  - `make_valid(solution)` – repairs a solution to feasibility.
-  - `fitness(solution)` – objective (sum of values of selected items).
-  - `tweak(solution)` – randomized local change generator.
-  - `resolve(max_iter=...)` – **hill climbing** loop: apply `tweak → make_valid → accept if better`, track best.
-- Uses **NumPy RNG with a fixed seed** (`np.random.default_rng(seed=42)`) for both Problem 1 and Problem 2.
-- Sets two problem instances with different constraint scales (Problem 2 has larger capacities).
 
 
 ## Strengths
